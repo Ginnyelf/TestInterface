@@ -15,6 +15,7 @@ public class ApplicationForm {
 
     @BeforeAll
     static void setDriver() {
+        System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
         WebDriverManager.chromedriver().setup();
     }
 
